@@ -10,3 +10,10 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.container-fluid {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.numero {
+    background-color: rgba(0, 0, 0, 0.284);
+}
