@@ -15,5 +15,20 @@
 }
 
 .numero {
-    background-color: rgba(0, 0, 0, 0.284);
+    font-size: 200px;
+    margin-right: 70px;
+}
+
+.icono {
+    font-size: 140px;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+
+footer {
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 10px;
 }
