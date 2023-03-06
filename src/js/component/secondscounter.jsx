@@ -1,12 +1,6 @@
 import React from "react";
 
 const SecondsCounter = (props) => {
-    let decenasSegundos = 0;
-
-    if (props.seconds % 10 && props.seconds != 0) {
-        decenasSegundos++;
-    }
-
     return (
         <>
             <div className="container-fluid text-light bg-dark">

@@ -18,27 +18,31 @@ let hora2 = 0;
 let hora3 = 0;
 
 setInterval(() => {
-  tiempoSegundos = tiempoSegundos + 1;
+  tiempoSegundos++;
 
-  switch (true) {
-    case tiempoSegundos > 9:
-      tiempoSegundos = 0;
-      decenaSeconds++;
-      break;
-    case decenaSeconds > 8:
-      decenaSeconds = 0;
-      centenaSeconds++;
-      break;
-    case hora1 > 8:
-      hora1 = 0;
-      hora2++;
-      break;
-    case hora2 > 8:
-      hora2 = 0;
-      hora3++;
-      break;
-    default:
-      break;
+  if (tiempoSegundos === 10) {
+    tiempoSegundos = 0;
+    decenaSeconds++;
+  }
+
+  if (decenaSeconds === 10) {
+    decenaSeconds = 0;
+    centenaSeconds++;
+  }
+
+  if (centenaSeconds === 10) {
+    centenaSeconds = 0;
+    hora1++;
+  }
+
+  if (hora1 === 10) {
+    hora1 = 0;
+    hora2++;
+  }
+
+  if (hora2 === 10) {
+    hora2 = 0;
+    hora3++;
   }
 
   ReactDOM.render(
